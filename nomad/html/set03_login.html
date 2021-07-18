@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script></script>
-
+    <style>
+        .hidden {display: none;}
+    </style>
 </head>
 <body>
-    <form id="login-form">
+    <form id="login-form" class="hidden">
         <input type="text" placeholder="내이름은?" required maxlength="15">
         <button type="submit">Login</button>
     </form>
+    <h1 id="greeting" class="hidden">title</h1>
+    <a href="https://nomadcoder.co">nomad</a>
     <script src="../js/setp03.js" defer></script>
 </body>
 </html>
