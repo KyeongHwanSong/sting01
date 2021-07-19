@@ -4,7 +4,7 @@ a {text-decoration: none;}
 *, *::after, *::before {box-sizing: border-box;}
 
 .inner {position: relative; width: 1100px; margin: 0 auto;}
-.btn {display: inline-block; min-width: 130px; padding: 10px; font-size: 16px; font-weight: 700; text-align: center; border: 2px solid #333; border-radius: 4px; cursor: pointer; transition: .4s;}
+.btn {display: inline-block; min-width: 130px; padding: 10px; font-size: 16px; font-weight: 700; color: #000; text-align: center; border: 2px solid #333; border-radius: 4px; cursor: pointer; transition: .4s;}
 .btn:hover {background-color: #333; color: #fff;}
 .btn.btn--reverse {background-color: #333; color: #fff;}
 .btn.btn--reverse:hover  {background-color: transparent; color: #333;}
@@ -52,11 +52,30 @@ header .badges .badge {overflow: hidden; margin-bottom: 12px; border-radius: 10p
 
 .visual {position: relative; margin-top: 120px; background: url(../images/visual_bg.jpg) no-repeat 50% 50%;}
 .visual .inner {position: relative; height: 646px;}
-.visual .title {}
-.visual .title .btn {position: absolute; top: 88px; left: -10px;}
+.visual .title {position: absolute; top: 88px; left: -10px;}
+.visual .title .btn {position: absolute; top: 259px; left: 173px;}
 .visual .cup1.image {position: absolute; bottom: 0; right: -47px;}
 .visual .cup1.text {position: absolute; top: 38px; right: 171px;}
 .visual .cup2.image {position: absolute; bottom: 0; right: 162px;}
 .visual .cup2.text {position: absolute; top: 321px; right: 416px;}
 .visual .spoon {position: absolute; bottom: 0; left: 275px;}
 
+.visual .fade-in {opacity: 0;}
+
+.notice {}
+.notice .notice--line {position: relative;}
+.notice .notice--line [class^="bg-"] {position: absolute; top: 0; width: 50%; height: 100%;}
+.notice .notice--line .bg-left {left: 0; background-color: #333;}
+.notice .notice--line .bg-right {right: 0; background-color: #f6f5ef;}
+.notice .notice--line .inner {display: flex; display: -ms-flexbox;}
+.notice .notice--line .inner .inner-left {display: flex; display: -ms-flexbox; align-items: center; justify-content: center; width: 60%; height: 100%; background-color: #333;}
+.notice .notice--line .inner .inner-left h2 {margin-right: 20px; font-size: 17px; color: #fff; font-weight: 700;}
+.notice .notice--line .inner .inner-left .swiper-container {flex-grow: 1; height: 62px;}
+.notice .notice--line .inner .inner-left .swiper-container .swiper-slide {display: flex; align-items: center; height: 62px;}
+.notice .notice--line .inner .inner-left .swiper-container .swiper-slide a {color: #fff;}
+.notice .notice--line .inner .inner-left .notice-line__more {margin-right: 20px; color: #fff;}
+.notice .notice--line .inner .inner-left .notice-line__more .material-icons {font-size: 30px; color: #fff;}
+.notice .notice--line .inner .inner-right {display: flex; display: -ms-flexbox; align-items: center; justify-content: flex-end; width: 40%; height: 62px;}
+.notice .notice--line .inner .inner-right h2 {}
+.notice .notice--line .inner .inner-right .toggle-promotion {display: flex; display: -ms-flexbox; align-items: center; justify-content: center; width: 62px;}
+.notice .notice--line .inner .inner-right .material-icons {font-size: 30px;}
