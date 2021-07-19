@@ -1,11 +1,16 @@
 body {min-height:2000px; color: #333; font-size: 16px; font-weight: 400; line-height: 1.4; font-family: 'Nanum Gothic', sans-serif;} 
 img {display: block;}
 a {text-decoration: none;}
+*, *::after, *::before {box-sizing: border-box;}
 
 .inner {position: relative; width: 1100px; margin: 0 auto;}
 
+.btn {display:inline-block; width: 130px; padding: 10px; border:3px solid #333; font-size: 16px; font-weight: 700; color: #333; text-align: center; transition: .4s;}
+.btn.btn--reverse {background-color: #333;}
+.btn.btn--reverse:hover {background-color: transparent; color: #333;}
+
 /* header */
-header {position: fixed; top: 0; width: 100%; background-color: #f6d6f0; border-bottom: 1px solid #c8c8c8;}
+header {position: fixed; top: 0; z-index: 9; width: 100%; background-color: #f6d6f0; border-bottom: 1px solid #c8c8c8;}
 header > .inner {height: 120px;}
 header .logo {position: absolute; top: 0; bottom: 0; margin: auto;}
 header .sub-menu {display: flex; display: -ms-flexbox; position: absolute; top: 10px; right: 0;}
@@ -38,3 +43,14 @@ header .main-menu .contents__texture p {color: 669900; margin: 4px 0 14px;}
 
 header .badges {position: absolute; top: 132px; right: 12px;}
 header .badges .badge {overflow: hidden; margin-bottom: 12px; border-radius: 10px; box-shadow: 4px 4px 10px rgba(0,0,0,.15); cursor: pointer;}
+
+.visual {position: relative; margin-top: 120px; background: url(../images/visual_bg.jpg) no-repeat 50% 50%;}
+.visual .inner {position: relative; height: 646px;}
+.visual .title {}
+.visual .title .btn {position: absolute; top: 88px; left: -10px;}
+.visual .cup1.image {position: absolute; bottom: 0; right: -47px;}
+.visual .cup1.text {position: absolute; top: 38px; right: 171px;}
+.visual .cup2.image {position: absolute; bottom: 0; right: 162px;}
+.visual .cup2.text {position: absolute; top: 321px; right: 416px;}
+.visual .spoon {position: absolute; bottom: 0; left: 275px;}
+
