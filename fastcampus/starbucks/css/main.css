@@ -4,10 +4,16 @@ a {text-decoration: none;}
 *, *::after, *::before {box-sizing: border-box;}
 
 .inner {position: relative; width: 1100px; margin: 0 auto;}
-
-.btn {display:inline-block; width: 130px; padding: 10px; border:3px solid #333; font-size: 16px; font-weight: 700; color: #333; text-align: center; transition: .4s;}
-.btn.btn--reverse {background-color: #333;}
-.btn.btn--reverse:hover {background-color: transparent; color: #333;}
+.btn {display: inline-block; min-width: 130px; padding: 10px; font-size: 16px; font-weight: 700; text-align: center; border: 2px solid #333; border-radius: 4px; cursor: pointer; transition: .4s;}
+.btn:hover {background-color: #333; color: #fff;}
+.btn.btn--reverse {background-color: #333; color: #fff;}
+.btn.btn--reverse:hover  {background-color: transparent; color: #333;}
+.btn.btn--brown {color: #592b18; border-color: #592b18;}
+.btn.btn--brown:hover  {background-color: #592b18; color: #fff;}
+.btn.btn--gold {color: #d9aa8a; border-color: #d9aa8a;}
+.btn.btn--gold:hover  {background-color: #d9aa8a; color: #333;}
+.btn.btn--white {color: #fff; border-color: #fff;}
+.btn.btn--white:hover  {background-color: #fff; color: #333;}
 
 /* header */
 header {position: fixed; top: 0; z-index: 9; width: 100%; background-color: #f6d6f0; border-bottom: 1px solid #c8c8c8;}
